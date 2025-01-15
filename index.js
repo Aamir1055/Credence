@@ -12,6 +12,8 @@ function SaveData() {
         return;
     }
 
+    
+
     var Date = JoiningDate.split("-");
     var FormattedDate = Date[2] + "-" + Date[1] + "-" + Date[0];
 
@@ -99,9 +101,9 @@ function RefreshData() {
 
         row.innerHTML = `
             <td>${employee.name}</td>
-            <td>${employee.age}</td>
             <td>${employee.designation}</td>
             <td>${employee.joiningDate}</td>
+            <td>${employee.age}</td>
             <td>
                 <button type="button" class="btn btn-danger" onclick="DeleteData(${employee.id})">Delete</button>
                 <button type="button" class="btn btn-warning" onclick="EditData(${employee.id})">Edit</button>
